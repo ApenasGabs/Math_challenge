@@ -1,18 +1,9 @@
-my_list = []
-teste = int(input('Digite um numero entre 2 a 120  '))
-
-if( (teste/2) == 0 or (teste/5) == 0 or (teste/7) == 0):
-    print ('Este numero não é um numero primo')
-else:
-    print('este é um numero primo')
-    if( (teste%2) == 0 or (teste%5) == 0 or (teste%7) == 0):
-    print ('Este numero não é um numero primo')
-else:
-    print('este é um numero primo')
-
-my_list = [None]*121
-for num in range(2,121):
-    for numb in range (2, num):
-        if num%numb == 0 :
-            my_list.append(num)
-            print(my_list)
+import math
+deg =  45 #int(input('Digite o angulo '))
+vel_kmh = 85 #int(input('Digite a velocidade Km/h '))
+vel_ms = (vel_kmh*1000)/3600
+cos=math.cos(deg)
+time = 5
+dist_angle = time*vel_ms
+dist_hor = dist_angle*cos
+print ('A distancia horizontal é', f'{dist_hor:.2f}','metros')

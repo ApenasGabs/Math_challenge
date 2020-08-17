@@ -9,6 +9,5 @@ dist_hor = dist_angle*cos
 print('sua velocidade em Ms é ', vel_ms)
 print('o cosseno de',deg,'é',cos)
 print('a distancia com angulo de',deg, 'é', dist_angle)
-print ('a distancia horizontal é', dist_hor)
-
-
+print ('a distancia horizontal é', f'{dist_hor:.1f}'
+)
