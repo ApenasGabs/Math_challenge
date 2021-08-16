@@ -1,4 +1,4 @@
-dist = 149600000
-vel = 28440
-days = (dist/vel)/24
-print('Serão necessarios',f'{days:.1f}','dias') 
+def retorna_tempo_arena_em_milisegundos(distancia,velocidade):
+  fdm = float(distancia)
+  result  = round((fdm/velocidade)*1000000, 0)
+  return result
