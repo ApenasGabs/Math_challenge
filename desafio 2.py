@@ -13,8 +13,13 @@ def retorna_tempo_minimo_em_minutos(p, s, n):
     tempo_portao = s/n
     tempo_total = math.ceil(tempo_portao*p)
     tempo_final = math.ceil(tempo_total/60)
+    if( s%5 != 0 ):
+        return tempo_final+ 1
+    else:
+        return print(tempo_final)
 
-    return print(tempo_final)
+
+    
 
 
 retorna_tempo_minimo_em_minutos(p, s, n)
