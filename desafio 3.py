@@ -1,13 +1,16 @@
 import math
-deg =  int(input('Digite o angulo '))
-vel_kmh = int(input('Digite a velocidade Km/h'))
-vel_ms = (vel_kmh*1000)/3600
-cos=math.cos(deg)
-time = 5
-dist_angle = time*vel_ms
-dist_hor = dist_angle*cos
-print('sua velocidade em Ms é ', vel_ms)
-print('o cosseno de',deg,'é',cos)
-print('a distancia com angulo de',deg, 'é', dist_angle)
-print ('a distancia horizontal é', f'{dist_hor:.1f}'
-)
+
+
+def retorna_pessoas_preferem_um_unico_palco(quantidade_pessoas_evento):
+    apenas_a = (0.45 - (0.2 + 0.18 - 0.03))
+    apenas_b = (0.33 - (0.2 + 0.10 - 0.03))
+    apenas_c = (0.34 - (0.18 + 0.10 - 0.03))
+    return math.floor((apenas_a + apenas_b + apenas_c)*quantidade_pessoas_evento)
+
+    '''a = quantidade_pessoas_evento * 0.45
+  b = quantidade_pessoas_evento * 0.33
+  c = quantidade_pessoas_evento * 0.34
+  a_b = quantidade_pessoas_evento * 0.2
+  a_c = quantidade_pessoas_evento * 0.18
+  b_c = quantidade_pessoas_evento * 0.1
+  a_b_c = quantidade_pessoas_evento * 0.03'''
