@@ -5,14 +5,27 @@
 
 const combustivel = 2;
 const consumoMed = 8;
-const distanciaMax = combustivel * consumoMed;
-console.log("distanciaMax: ", distanciaMax);
+const kmXlitro = combustivel * consumoMed;
+console.log("kmXlitro: ", kmXlitro);
 // Postos de Gasolina (km): [2, 15, 22, 10.2]
 const postosDeGasolina = [2, 15, 22, 10.2];
+let valorFinal;
 
-const todasDistancias = postosDeGasolina.forEach((distanciaPosto) => {
-  distanciaMax - distanciaPosto;
+postosDeGasolina.forEach((distanciaPosto) => {
+  const chegaNoPosto = kmXlitro - distanciaPosto;
+  if (chegaNoPosto < 0) {
+    valorFinal = -1;
+  }
+  if (chegaNoPosto >= 0) {
+    let distanciaAlvo = 0;
+    if (distanciaAlvo <= chegaNoPosto) {
+    }
+  }
 });
+// ordenar o array por ordem crescente e retornar o primeiro menor valor,
+// caso nao haja nenhum valor positivo retorna -1
+
+valorFinal = distanciaAlvo;
 const distanciasPositivas = todasDistancias.filter((number) => number > 0);
 console.log("distanciasPositivas: ", distanciasPositivas);
 var menor = Math.min.apply(null, distanciasPositivas);
