@@ -5,14 +5,14 @@
 
 const combustivel = 2;
 const consumoMed = 8;
-const kmXlitro = combustivel * consumoMed;
-console.log("kmXlitro: ", kmXlitro);
+const kmMax = combustivel * consumoMed;
+console.log("kmMax: ", kmMax);
 // Postos de Gasolina (km): [2, 15, 22, 10.2]
 const postosDeGasolina = [2, 15, 22, 10.2];
 let valorFinal;
 
-postosDeGasolina.forEach((distanciaPosto) => {
-  const chegaNoPosto = kmXlitro - distanciaPosto;
+postosDeGasolina.forEach((distanciaAteOPosto) => {
+  const chegaNoPosto = kmMax - distanciaAteOPosto;
   if (chegaNoPosto < 0) {
     valorFinal = -1;
   }
